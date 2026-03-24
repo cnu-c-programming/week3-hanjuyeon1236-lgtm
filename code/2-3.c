@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+void divide(int a, int b, int *q, int *r) {
+
+}
+
+int main() {
+  int a = 27;
+  int b = 4;
+  int q = 0;
+  int r = 0;
+
+  divide();
+
+  prinf("%d\n%d\n", q, r);
+
+  reurn 0;
+}

@@ -7,7 +7,7 @@ void my_sum(char type, int count, ...) {
 
   if(type == 'S') {
       for(int i = 0; i < count; i++) {
-         printf("%s%s, va_arg(ap, char*), (i < ccount - 1) ? " " : "");
+         printf("%s%s", va_arg(ap, char*), (i < count - 1) ? " " : "");
            }
            printf("\n");
       }
@@ -21,7 +21,7 @@ printf("\n");
 else if(type == 'D') {
   int sum = 0;
   for(int i = 0; i < count; i++) {
-     sum += va_arg(a0, int);
+     sum += va_arg(ap, int);
   }
 printf("%d\n", sum);
 }

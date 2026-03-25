@@ -1,7 +1,12 @@
 #include <stdio.h>
 
 int power(int base, int exp) {
-
+  id(exp == 0) {
+    return 1;
+}
+else {
+  return base * power(base, exp -1);
+}
 }
 
 int main() {

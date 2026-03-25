@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int power(int base, int exp) {
-  id(exp == 0) {
+  if(exp == 0) {
     return 1;
 }
 else {

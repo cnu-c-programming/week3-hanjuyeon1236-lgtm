@@ -1,7 +1,11 @@
 #include <stdio.h>
 
 void swap(int *x, int *y) {
+  int temp;
 
+  temp = *x;
+  *x = *y
+  *y = temp;
 }
 
 int main() {
@@ -9,7 +13,8 @@ int main() {
 
   printf("x = %d, y = %d\n", x, y);
 
-  swap();
+  swap(&x, &y);
+  
   printf("x = %d, y = %d\n", x, y);
 
   reurn 0;

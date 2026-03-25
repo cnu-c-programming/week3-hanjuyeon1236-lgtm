@@ -1,6 +1,33 @@
 #include <stdio.h>
 #include <stdarg.h>
 
+void my_sum(char type, int count, ...) {
+  va_list ap;
+  va_start(ap, count);
+
+  if(type == 'S') {
+      for(int i = 0; i < count; i++) {
+         printf("%s%s, va_arg(ap, char*), (i < ccount - 1) ? " " : "");
+           }
+           printf("\n");
+      }
+
+else if(type == 'C') {
+  for(int i = 0; i < count; i++) {
+     printf("%c", va_arg(ap, int));
+  }
+printf("\n");
+}
+else if(type == 'D') {
+  int sum = 0;
+  for(int i = 0; i < count; i++) {
+     sum += va_arg(a0, int);
+  }
+printf("%d\n", sum);
+}
+va_end(ap);
+  }
+
 int main() {
   my_sum('S', 2, "Hello", "World");
   my_sum('C', 3, 'C', 'N', 'U');
